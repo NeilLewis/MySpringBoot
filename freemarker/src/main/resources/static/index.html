@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        function show() {
+            $.post("ajax/say",{},function (result) {
+                alert(result);
+            });
+        }
+    </script>
+</head>
+<body>
+    <button onclick="show()">freemarker调用后台</button>
+    <a href="/blog/123">取参数值</a>
+    <a href="/blog/query/?q=123456">搜索</a>
+</body>
+</html>
